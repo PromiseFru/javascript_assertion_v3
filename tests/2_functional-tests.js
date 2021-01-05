@@ -87,7 +87,7 @@ suite("Functional Tests with Zombie.js", function () {
     });
     // #6
     test('submit "surname" : "Vespucci" - write your e2e test...', function (done) {
-      browser.fill("surname", "Colombo").pressButton("submit", function () {
+      browser.fill("surname", "Vespucci").pressButton("submit", function () {
         browser.assert.success();
         browser.assert.text("span#name", "Amerigo");
         browser.assert.text("span#surname", "Vespucci");
